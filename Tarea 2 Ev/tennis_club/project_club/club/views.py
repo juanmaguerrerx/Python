@@ -94,5 +94,5 @@ def book_Delete(request, book_id):
     book.delete()
     return redirect('book_All')
 
-# def welcome(request):
-#     member_All
+def welcome(request):
+    return render(request, 'welcome.html')

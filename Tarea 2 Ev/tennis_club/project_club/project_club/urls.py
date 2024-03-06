@@ -5,7 +5,7 @@ from django.views.generic import RedirectView
 
 
 urlpatterns = [
-    # path('/', views.welcome),
+    path('', views.welcome, name='welcome'),  # Ruta para la página de bienvenida
     path('admin/', admin.site.urls),
     path('members/', views.member_All, name='member_All'),
     path('members/new/', views.member_New, name='member_New'),
