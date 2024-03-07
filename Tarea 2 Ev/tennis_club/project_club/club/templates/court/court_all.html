@@ -21,7 +21,7 @@
                 
                 <td>
                     <a class="btn btn-primary btn-sm" href="{% url 'court_Edit' court_id=court.pk %}">Edit</a>
-                    <a href={% url 'court_Delete' court.pk %}><button type="button" class="btn btn-sm btn-danger">Delete</button></a>
+                    <a href={% url 'court_Delete' court.pk %} onclick="return confirm('Sure?');"><button type="button" class="btn btn-sm btn-danger">Delete</button></a>
                 </td>
             </tr>
             {% endfor %}

@@ -24,7 +24,7 @@
                 <td>{{ member.category }}</td>
                 <td>
                      <a class="btn btn-primary btn-sm" href="{% url 'member_Edit' member.pk %}">Edit</a>
-                     <a href={% url 'member_Delete' member.pk %}><button type="button" class="btn btn-sm btn-danger">Delete</button></a>
+                     <a href={% url 'member_Delete' member.pk %} onclick="return confirm('Sure?');"><button type="button" class="btn btn-sm btn-danger">Delete</button></a>
                     </td>
             </tr>
             {% endfor %}
